@@ -16,60 +16,10 @@ Update Install Validate
  Run "sudo yum update" to apply all updates. 
 #SuperUser 
  [ec2-user@ip-172-31-2-192 ~]$ sudo su 
+ 
 #Yum update system make it current
  [root@ip-172-31-2-192 ec2-user]# yum update -y 
- Loaded plugins: priorities, update-motd, upgrade-helper 
- Resolving Dependencies 
- --> Running transaction check 
- ---> ...
- --> Finished Dependency Resolution 
  
- Dependencies Resolved 
- 
- ================================================================================ 
-  Package            Arch       Version                   Repository        Size 
- ================================================================================ 
- Installing: 
-  kernel             x86_64     4.4.39-34.54.amzn1        amzn-updates      16 M 
- Updating: 
-  kernel-tools       x86_64     4.4.39-34.54.amzn1        amzn-updates      99 k 
-  ntp                x86_64     4.2.6p5-43.33.amzn1       amzn-updates     658 k 
-  ntpdate            x86_64     4.2.6p5-43.33.amzn1       amzn-updates      91 k 
-  sudo               x86_64     1.8.6p3-25.23.amzn1       amzn-updates     929 k 
-  vim-common         x86_64     2:8.0.0134-1.44.amzn1     amzn-updates     9.0 M 
-  vim-enhanced       x86_64     2:8.0.0134-1.44.amzn1     amzn-updates     1.2 M 
-  vim-filesystem     x86_64     2:8.0.0134-1.44.amzn1     amzn-updates      12 k 
-  vim-minimal        x86_64     2:8.0.0134-1.44.amzn1     amzn-updates     495 k 
- 
- Transaction Summary 
- ================================================================================ 
- Install  1 Package 
- Upgrade  8 Packages 
- 
- Total download size: 28 M 
- Downloading packages: 
-...
- -------------------------------------------------------------------------------- 
- Total                                               55 MB/s |  28 MB  00:00 
- Running transaction check 
- Running transaction test 
- Transaction test succeeded 
- Running transaction 
-...
- 
- Installed: 
-   kernel.x86_64 0:4.4.39-34.54.amzn1 
- 
- Updated: 
-   kernel-tools.x86_64 0:4.4.39-34.54.amzn1 
-   ntp.x86_64 0:4.2.6p5-43.33.amzn1 
-   ntpdate.x86_64 0:4.2.6p5-43.33.amzn1 
-   sudo.x86_64 0:1.8.6p3-25.23.amzn1 
-   vim-common.x86_64 2:8.0.0134-1.44.amzn1 
-   vim-enhanced.x86_64 2:8.0.0134-1.44.amzn1 
-   vim-filesystem.x86_64 2:8.0.0134-1.44.amzn1 
-   vim-minimal.x86_64 2:8.0.0134-1.44.amzn1 
-   
 #Check yum install -y aws-cli is installed (installed with aws linux)
  [root@ip-172-31-2-192 ec2-user]# yum install -y aws-cli
  Up to date nothing to do 
