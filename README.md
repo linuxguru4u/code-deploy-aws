@@ -1,3 +1,14 @@
+Requirements 
+============
+AWS 
+Role CodeDeploy
+          -> Policy Trust for Code Deploy
+Role EC2CodeDeploy
+   
+   
+Aws instance 
+
+
 Instructions
 ============
 1.) When server is booted run the following commands as root. 
